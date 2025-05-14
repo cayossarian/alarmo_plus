@@ -6,16 +6,16 @@
     "notify"
   ],
   "codeowners": [
-    "@nielsfaber"
+    "@cayossarian"
   ],
   "config_flow": true,
   "dependencies": [
     "http",
     "panel_custom"
   ],
-  "documentation": "https://github.com/nielsfaber/alarmo",
+  "documentation": "https://github.com/cayossarian/alarmo",
   "iot_class": "local_push",
-  "issue_tracker": "https://github.com/nielsfaber/alarmo/issues",
+  "issue_tracker": "https://github.com/cayossarian/alarmo/issues",
   "requirements": [],
-  "version": "v0.0.0"
+  "version": "v1.10.8a"
 }
