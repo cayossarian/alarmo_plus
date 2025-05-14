@@ -59,6 +59,70 @@
           "description": "Name of the user to disable."
         }
       }
+    },
+    "set_sensor_configuration": {
+      "name": "Set Sensor Configuration",
+      "description": "Sets various configuration properties for one or more Alarmo sensors. You can target a single sensor or a list of sensors. The same configuration will be applied to all specified sensors.",
+      "fields": {
+        "entity_id": {
+          "name": "Entity ID",
+          "description": "The Alarmo sensor entity or list of entities to configure. You can specify a single entity_id as a string or multiple as a list."
+        },
+        "type": {
+          "name": "Type",
+          "description": "The type of the sensor (e.g., door, window, motion)."
+        },
+        "modes": {
+          "name": "Modes",
+          "description": "List of arm modes in which this sensor is active. Use user-friendly names: home, away, night, custom, vacation."
+        },
+        "enabled": {
+          "name": "Enabled",
+          "description": "Enable or disable this sensor within Alarmo's internal configuration (distinct from the HA entity's enabled state). When disabled, Alarmo will ignore this sensor."
+        },
+        "use_exit_delay": {
+          "name": "Use Exit Delay",
+          "description": "Whether the sensor respects the exit delay."
+        },
+        "use_entry_delay": {
+          "name": "Use Entry Delay",
+          "description": "Whether the sensor respects the entry delay."
+        },
+        "always_on": {
+          "name": "Always On",
+          "description": "Whether the sensor is always active, regardless of arm mode."
+        },
+        "arm_on_close": {
+          "name": "Arm on Close",
+          "description": "Whether the alarm attempts to arm when this sensor closes (if it was an immediate sensor preventing arming)."
+        },
+        "allow_open": {
+          "name": "Allow Open",
+          "description": "Whether this sensor is allowed to be open when arming (relevant for immediate sensors)."
+        },
+        "trigger_unavailable": {
+          "name": "Trigger when Unavailable",
+          "description": "Whether the sensor going to an 'unavailable' state should trigger the alarm."
+        },
+        "auto_bypass": {
+          "name": "Auto Bypass",
+          "description": "Automatically bypass this sensor if it's open when arming."
+        },
+        "auto_bypass_modes": {
+          "name": "Auto Bypass Modes",
+          "description": "List of arm modes in which auto-bypass is applicable. Use user-friendly names: home, away, night, custom, vacation. If you provide this field, you must also provide auto_bypass."
+        }
+      }
+    },
+    "get_sensor_configuration": {
+      "name": "Get Sensor Configuration",
+      "description": "Retrieves the Alarmo-specific configuration for a given sensor and fires an event with the data. The event type will be 'alarmo_sensor_get_config_event'.",
+      "fields": {
+        "entity_id": {
+          "name": "Entity ID",
+          "description": "The Alarmo sensor entity (e.g., binary_sensor.door_contact) to get configuration for."
+        }
+      }
     }
   },
   "selector": {
