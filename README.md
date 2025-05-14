@@ -1,9 +1,9 @@
-# Alarmo
+# Alarmo++
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/hacs/integration)
 
 This is an alarm system integration for Home Assistant. It provides a user interface for setting up your own alarm system completely from the browser.
 
-- [Alarmo](#alarmo)
+- [Alarmo++](#alarmo)
   - [Introduction](#introduction)
     - [Features](#features)
     - [Preview](#preview)
@@ -55,7 +55,7 @@ The integration is comparable with the [Manual Alarm](https://www.home-assistant
 
 This code was originally forked from nielsfaber/alarmo and extended.
 
-Alarmo consists of 3 parts:
+Alarmo++ consists of 3 parts:
 * Alarmo component: a custom component for HA that controls the states of the alarm panel entities in HA.
 * Alarmo panel: a GUI for configuring the settings of your alarm (sensors, delays, actions etc.)
 * Alarmo card: a custom card for arming / disarming the alarm.
@@ -211,7 +211,7 @@ The Alarmo entity defines the following attributes:
 | `delay`            | `null`                  | 30                             | Duration of the exit or entry delay. Only set in the `arming` and `pending` states, `null` otherwise.                                                                                                                                                                                                                                                                                                                            |
 
 #### Commands
-The Alarmo entities support the following commands:
+The Alarmo++ entities support the following commands:
 
 | Command             | Description                                  | Conditions                                                                                                                                                     |
 | ------------------- | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
