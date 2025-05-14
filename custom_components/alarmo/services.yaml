@@ -164,7 +164,7 @@ set_sensor_configuration:
             - "home"
             - "custom"
             - "vacation"
-  example: |
+  example:
     entity_id: ["binary_sensor.garden_door_contact"]
     type: "door"
     enabled: true
