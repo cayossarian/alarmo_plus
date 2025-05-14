@@ -3,6 +3,8 @@
 
 This is an alarm system integration for Home Assistant. It provides a user interface for setting up your own alarm system completely from the browser.
 
+This code was originally forked from nielsfaber/alarmo and extended.
+
 - [Alarmo++](#alarmo)
   - [Introduction](#introduction)
     - [Features](#features)
@@ -52,8 +54,6 @@ This is an alarm system integration for Home Assistant. It provides a user inter
 This is an integration for the `alarm_control_panel` domain in HA.
 It allows to combine existing sensors for creating a security system for your house. 
 The integration is comparable with the [Manual Alarm](https://www.home-assistant.io/integrations/manual/) in HA, but also has some additional features that makes it easier to use. 
-
-This code was originally forked from nielsfaber/alarmo and extended.
 
 Alarmo++ consists of 3 parts:
 * Alarmo component: a custom component for HA that controls the states of the alarm panel entities in HA.
