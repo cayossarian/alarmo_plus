@@ -177,23 +177,6 @@ set_sensor_configuration:
             - "home"
             - "custom"
             - "vacation"
-  example:
-    entity_id: ["binary_sensor.garden_door_contact"]
-    type: "door"
-    enabled: true
-    modes:
-      - "away"
-      - "home"
-    use_exit_delay: true
-    use_entry_delay: true
-    always_on: false
-    arm_on_close: true
-    allow_open: false
-    trigger_unavailable: true
-    auto_bypass: true
-    auto_bypass_modes:
-      - "away"
-      - "home"
 
 get_sensor_configuration:
   name: "Get Sensor Configuration"
